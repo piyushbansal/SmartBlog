@@ -1,0 +1,7 @@
+https://gist.github.com/118964
+
+https://github.com/vmg/redcarpet
+
+http://github.github.com/github-flavored-markdown/
+
+Going through these links would be helpful
