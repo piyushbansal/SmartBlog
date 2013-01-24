@@ -10,20 +10,21 @@
 			});
         }
         $(document).ready(function() {
+			console.log('Document Ready');
             loadDoc('1.html');
-            $("#test1").click(function() {
+            $("#1").click(function() {
                   loadDoc('1.html');
-            });
-            $("#test2").click(function() {
-                  loadDoc('1.html');
+			console.log('Document Ready');
             });
         });
     </script>
 </head>
 <body>
+		<div>
             <p>
-                <a href="#"><span id="test1" class="menuitem">load 1.html</span></a><br />
-                <a href="#" ><span id="test2" class="menuitem">load 1.html</span></a><br />
+                <a href="#"><span id="1" class="menuitem">load 1.html</span></a><br />
             </p>
+	    </div>
+	                <p id="data"></p>
 </body>
 </html>
