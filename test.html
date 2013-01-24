@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function loadDoc(fileName) {
+            var file = fileName;
+			$.get(file, function (data) {
+			      $('#data').html(data);
+			});
+        }
+        $(document).ready(function() {
+            loadDoc('1.html');
+            $("#test1").click(function() {
+                  loadDoc('1.html');
+            });
+            $("#test2").click(function() {
+                  loadDoc('1.html');
+            });
+        });
+    </script>
+</head>
+<body>
+            <p>
+                <a href="#"><span id="test1" class="menuitem">load 1.html</span></a><br />
+                <a href="#" ><span id="test2" class="menuitem">load 1.html</span></a><br />
+            </p>
+</body>
+</html>
